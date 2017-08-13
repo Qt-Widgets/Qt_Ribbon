@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>609</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenu {
+    background-color: #FCFCFC;
+    border: 1px solid #8492A6;
+}
+QMenu::item {
+    background-color: transparent;
+}
+MenuItemWidget::hover{
+	border: 1px solid #FFB700;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,stop:0 #FEF9F4, stop:0.38 #FDE0BD,stop:0.39 #FFCE69, stop:1 #FFFFE7);
+}
+QMenu::item:selected { 
+    background-color: #654321;
+}
+QWidget{
+	font-family: &quot;微软雅黑&quot;;
+}
+#MainWindowClass{
+	background-color: #D2DCEA;
+}
+#pushButton_MenuFile::menu-indicator{
+	image:None;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton_MenuFile">
+         <property name="styleSheet">
+          <string notr="true">#pushButton_MenuFile{
+	min-width:50px;
+	max-width:50px;
+	min-height:22px;
+	max-height:22px;
+}
+#pushButton_MenuFile{
+	color:white;
+	border: 1px solid #416ABD;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+		stop:0 #467FBD, stop:0.5 #2A5FAC,stop:0.51 #1A4088, stop:1 #419ACF);
+}
+#pushButton_MenuFile::hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+		stop:0 #7BB2EB, stop:0.5 #477ECD,stop:0.51 #114ECF, stop:1 #80E1FF);
+}
+#pushButton_MenuFile::pressed{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+		stop:0 #467BBB, stop:0.5 #2F63AE,stop:0.51 #1C438A, stop:1 #358BC9);
+}</string>
+         </property>
+         <property name="text">
+          <string>文件</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tabWidget_Main">
+         <property name="styleSheet">
+          <string notr="true">#tabWidget_Main::tab-bar {
+    left: 65px;
+}
+#tabWidget_Main QTabBar::tab{
+	min-width:60px;
+	max-width:60px;
+	min-height:22px;
+	max-height:22px;
+}
+#tabWidget_Main QTabBar::tab {
+	background: transparent;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+#tabWidget_Main QTabBar::tab:selected, QTabBar::tab:hover {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+#tabWidget_Main::tab-bar {
+ 	border: 1px solid #BAC9DB;
+}
+#tabWidget_Main QTabBar::tab:selected{
+	border: 1px solid #BAC9DB;
+	background: white;
+    border-bottom-color: #FFFFFF;
+}
+#tabWidget_Main QTabBar::tab:hover:!selected{
+	border: 1px solid #ECBC3D;
+}
+#tabWidget_Main QTabBar::tab:!selected {
+    margin-top: 1px; 
+}
+
+#tabWidget_Main QGroupBox{
+	border-left: 1px solid gray;
+	border-top: 0px solid gray;
+}
+
+#tabWidget_Main QGroupBox::title {
+	color: #738399;
+    subcontrol-position: bottom center; 
+}
+
+#tabWidget_Main::pane{
+	border: 1px solid #BAC9DB;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FFFFFF, stop: 0.5 #DCE6F4,
+                                stop: 0.95 #DCE6F4, stop: 1.0 #E5F0FB);
+	top: -1px;
+}</string>
+         </property>
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="tabMainPage">
+          <attribute name="title">
+           <string>主页</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="title">
+              <string>字体</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="text">
+                 <string>PushButton</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="title">
+              <string>段落</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QSpinBox" name="spinBox"/>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBox"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabDataBase">
+          <attribute name="title">
+           <string>数据库</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QToolButton" name="toolButtonFLCC">
+             <property name="text">
+              <string>FLCC</string>
+             </property>
+             <property name="icon">
+              <iconset resource="mainwindow.qrc">
+               <normaloff>:/png/qtitan.png</normaloff>:/png/qtitan.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>64</width>
+               <height>64</height>
+              </size>
+             </property>
+             <property name="popupMode">
+              <enum>QToolButton::MenuButtonPopup</enum>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextUnderIcon</enum>
+             </property>
+             <property name="autoRaise">
+              <bool>true</bool>
+             </property>
+             <property name="arrowType">
+              <enum>Qt::NoArrow</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>436</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabDataBaseManager">
+          <attribute name="title">
+           <string>数据管理</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QToolButton" name="toolButtonFLCC_2">
+               <property name="text">
+                <string>故障信息</string>
+               </property>
+               <property name="icon">
+                <iconset resource="mainwindow.qrc">
+                 <normaloff>:/png/qtitan.png</normaloff>:/png/qtitan.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>64</height>
+                </size>
+               </property>
+               <property name="popupMode">
+                <enum>QToolButton::DelayedPopup</enum>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+               <property name="arrowType">
+                <enum>Qt::NoArrow</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButtonFLCC_3">
+               <property name="text">
+                <string>模拟输入</string>
+               </property>
+               <property name="icon">
+                <iconset resource="mainwindow.qrc">
+                 <normaloff>:/png/qtitan.png</normaloff>:/png/qtitan.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>64</height>
+                </size>
+               </property>
+               <property name="popupMode">
+                <enum>QToolButton::DelayedPopup</enum>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+               <property name="arrowType">
+                <enum>Qt::NoArrow</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButtonFLCC_4">
+               <property name="text">
+                <string>模拟输出</string>
+               </property>
+               <property name="icon">
+                <iconset resource="mainwindow.qrc">
+                 <normaloff>:/png/qtitan.png</normaloff>:/png/qtitan.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>64</height>
+                </size>
+               </property>
+               <property name="popupMode">
+                <enum>QToolButton::DelayedPopup</enum>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+               <property name="arrowType">
+                <enum>Qt::NoArrow</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButtonFLCC_5">
+               <property name="text">
+                <string>离散输入</string>
+               </property>
+               <property name="icon">
+                <iconset resource="mainwindow.qrc">
+                 <normaloff>:/png/qtitan.png</normaloff>:/png/qtitan.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>64</height>
+                </size>
+               </property>
+               <property name="popupMode">
+                <enum>QToolButton::DelayedPopup</enum>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+               <property name="arrowType">
+                <enum>Qt::NoArrow</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButtonFLCC_6">
+               <property name="text">
+                <string>离散输出</string>
+               </property>
+               <property name="icon">
+                <iconset resource="mainwindow.qrc">
+                 <normaloff>:/png/qtitan.png</normaloff>:/png/qtitan.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>64</height>
+                </size>
+               </property>
+               <property name="popupMode">
+                <enum>QToolButton::DelayedPopup</enum>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+               <property name="arrowType">
+                <enum>Qt::NoArrow</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButtonFLCC_7">
+               <property name="text">
+                <string>本地CCDL</string>
+               </property>
+               <property name="icon">
+                <iconset resource="mainwindow.qrc">
+                 <normaloff>:/png/qtitan.png</normaloff>:/png/qtitan.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>64</height>
+                </size>
+               </property>
+               <property name="popupMode">
+                <enum>QToolButton::DelayedPopup</enum>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+               <property name="arrowType">
+                <enum>Qt::NoArrow</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButtonFLCC_8">
+               <property name="text">
+                <string>总线输入</string>
+               </property>
+               <property name="icon">
+                <iconset resource="mainwindow.qrc">
+                 <normaloff>:/png/qtitan.png</normaloff>:/png/qtitan.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>64</height>
+                </size>
+               </property>
+               <property name="popupMode">
+                <enum>QToolButton::DelayedPopup</enum>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+               <property name="autoRaise">
+                <bool>true</bool>
+               </property>
+               <property name="arrowType">
+                <enum>Qt::NoArrow</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tabPBIT">
+          <attribute name="title">
+           <string>PBIT</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="tabFileOut">
+          <attribute name="title">
+           <string>文件生成</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="tabHelp">
+          <attribute name="title">
+           <string>帮助</string>
+          </attribute>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+      <zorder>tabWidget_Main</zorder>
+      <zorder>pushButton_MenuFile</zorder>
+     </widget>
+    </item>
+    <item>
+     <widget class="SearchWindow" name="widget_3" native="true"/>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>572</width>
+         <height>818</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>800</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>800</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SearchWindow</class>
+   <extends>QWidget</extends>
+   <header>searchwindow.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

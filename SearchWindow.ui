@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchWindow</class>
+ <widget class="QWidget" name="SearchWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>631</width>
+    <height>91</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QToolButton" name="toolButtonUpdata">
+       <property name="text">
+        <string>刷新</string>
+       </property>
+       <property name="icon">
+        <iconset resource="mainwindow.qrc">
+         <normaloff>:/png/redo16x16.png</normaloff>:/png/redo16x16.png</iconset>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButtonSava">
+       <property name="text">
+        <string>保存</string>
+       </property>
+       <property name="icon">
+        <iconset resource="mainwindow.qrc">
+         <normaloff>:/png/save16x16.png</normaloff>:/png/save16x16.png</iconset>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButtonInport">
+       <property name="text">
+        <string>导入</string>
+       </property>
+       <property name="icon">
+        <iconset resource="mainwindow.qrc">
+         <normaloff>:/png/file_open.png</normaloff>:/png/file_open.png</iconset>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButtonExport">
+       <property name="text">
+        <string>导出</string>
+       </property>
+       <property name="icon">
+        <iconset resource="mainwindow.qrc">
+         <normaloff>:/png/exit.png</normaloff>:/png/exit.png</iconset>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>正则表达式</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="reg_edit_2"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="filter_pushButton_2">
+       <property name="text">
+        <string>过滤</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <zorder>time_radio</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>toolButtonUpdata</zorder>
+  <zorder>toolButtonSava</zorder>
+  <zorder>toolButtonInport</zorder>
+  <zorder>toolButtonExport</zorder>
+ </widget>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

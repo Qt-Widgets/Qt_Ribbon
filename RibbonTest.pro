@@ -17,10 +17,13 @@ OBJECTS_DIR += debug
 UI_DIR += ./GeneratedFiles
 RCC_DIR += ./GeneratedFiles
 HEADERS += ./mainwindow.h \
-    SearchWindow.h
+    SearchWindow.h \
+    ExportDialog.h
 SOURCES += ./main.cpp \
     ./mainwindow.cpp \
-    SearchWindow.cpp
+    SearchWindow.cpp \
+    ExportDialog.cpp
 FORMS += ./mainwindow.ui \
-    SearchWindow.ui
+    SearchWindow.ui \
+    ExportDialog.ui
 RESOURCES += mainwindow.qrc

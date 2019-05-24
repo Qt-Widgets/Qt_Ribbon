@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>png/about.png</file>
+        <file>png/align_bottom.png</file>
+        <file>png/align_left.png</file>
+        <file>png/align_mid.png</file>
+        <file>png/align_right.png</file>
+        <file>png/align_top.png</file>
+        <file>png/align_vcenter.png</file>
+        <file>png/aligndown.png</file>
+        <file>png/alignleft.png</file>
+        <file>png/alignright.png</file>
+        <file>png/alignup.png</file>
+        <file>png/app.ico</file>
+        <file>png/clipboard16x16.png</file>
+        <file>png/clipboard32x32.png</file>
+        <file>png/close16x16.png</file>
+        <file>png/close32x32.png</file>
+        <file>png/cut16x16.png</file>
+        <file>png/exit.png</file>
+        <file>png/file_new.png</file>
+        <file>png/file_open.png</file>
+        <file>png/file_print.png</file>
+        <file>png/file_save.png</file>
+        <file>png/file_saveas.png</file>
+        <file>png/new16x16.png</file>
+        <file>png/new32x32.png</file>
+        <file>png/open16x16.png</file>
+        <file>png/open32x32.png</file>
+        <file>png/print16x16.png</file>
+        <file>png/print32x32.png</file>
+        <file>png/qtitan.png</file>
+        <file>png/redo16x16.png</file>
+        <file>png/save16x16.png</file>
+        <file>png/save32x32.png</file>
+        <file>png/saveasfile16x16.png</file>
+        <file>png/saveasfile32x32.png</file>
+        <file>png/smallalignleft.png</file>
+        <file>png/undo16x16.png</file>
+    </qresource>
+</RCC>
